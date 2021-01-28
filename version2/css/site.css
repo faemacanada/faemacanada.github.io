@@ -1,0 +1,531 @@
+html {
+	height:100%;
+	background-image: url(../images/faema-bg1.png);
+	background-repeat:no-repeat;
+}
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	height:100%;
+}
+
+.disclaimer p {
+	font-size: 12px;
+	color: #999;
+	padding-left:24px;
+}
+
+
+strong { font-weight: bold; }
+
+.clearfix:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+        }
+
+/* *:first-child+html .clearfix { zoom: 1; } */ /* IE7 */
+
+.center {text-align:center;}
+
+
+/* */
+
+table {	margin-bottom:12px;}
+
+th {   
+	font-family: Arial, Helvetica, sans-serif;
+    padding: 8px;
+    border: 1px solid #CCCCCC;
+	color:#333;
+	}
+td {   font-family: Arial, Helvetica, sans-serif;
+    padding: 8px;
+    border: 1px solid #CCCCCC;
+	color:#666;
+	}
+
+tr{}
+
+#content .panes td p { margin-top:0; margin-bottom:0;}
+
+/*  */
+
+
+
+#container {
+	width:100%;
+	min-height:100%;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+		background-color:#A5362F;
+
+}
+
+#header {
+	background-image: url(../images/faema-bg1.png);
+	height: 115px;
+/* 	width: 1280px;
+	background-image: url(../images/header-bg.jpg);
+	background-repeat: repeat-x;  */
+
+}
+
+#nav-wrapper {
+	padding: 60px 0 0 0;
+
+	}
+
+ul#nav {
+	height: 55px;
+	width: 700px;
+	float: left; 
+}
+#nav li {
+	/* display: inline; */
+}
+#nav li a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+	padding: 2px 2px;
+}
+
+#nav li#home , #nav li#commercial ,#nav li#semi-commercial ,#nav li#domestic ,#nav li#services ,#nav li#contact {
+		display: inline;
+}
+
+#nav li#home a span, #nav li#commercial a span,#nav li#semi-commercial a span,#nav li#domestic a span,  #nav li#services a span,#nav li#contact a span
+{line-height:20px;display:block; margin-left:6px;height:40px;font-size:16px;font-weight:bold;}
+
+li#home a            { width: 80px;	 }
+li#commercial a      { width: 150px; }
+li#semi-commercial a { width: 200px;  }
+li#domestic a        { width: 150px; }
+li#services a 		 { width: 150px;  }
+
+#logo {
+	height: 114px;
+	width: 330px;
+	background-image: url(../images/FAEMA-logo.jpg);
+	text-indent: -9999px;
+	float: left;
+}
+
+#main { 
+background-color:#fff;
+}
+
+#nav #services {clear: both;}
+
+
+#callout {
+	background-color: #000000;
+	height: 86px;
+
+	text-align: left;
+}
+
+#callout h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	height: 40px;
+	width: 1200px;
+	padding-top:8px;
+	padding-left:20px;
+}
+
+#callout h1 a {text-decoration:none;color:#FFF;}
+
+
+
+#content-wrapper { padding: 30px 0; width:1020px;}
+
+#content {
+	min-height: 600px;
+	height:auto !important;
+
+}
+
+#footer{
+	background-color: #a5362f;
+	
+} 
+
+
+
+/* tab pane styling */
+.panes div {
+	display:none;		
+	padding:32px 32px;
+	border:1px solid #999;
+	border-top:0;
+	min-height:356px;
+	overflow:auto;
+	font-size:14px;
+	background-color:#fff;
+}
+
+#content ul.tabs {
+	width: 700px;
+}
+
+#content .panes {
+	width: 700px;
+}
+
+#content .panes h2 {
+	color:#A5362F;
+	font-size:1.25em;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom:16px;
+}
+#content .panes p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #333;
+	line-height: 20px;
+	margin: 12px 8px 12px 0;
+}
+#content .panes ul {
+	margin-bottom:8px;
+	margin-left: 14px;
+}
+#content .panes li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	margin-bottom:6px;
+	line-height:1.25em;
+	color:#333;
+	list-style-type:disc;
+	list-style-position:outside;
+}
+
+#right {
+	float: right;
+	width: 615px;
+	margin-left: 20px;
+	min-height:300px;
+	height:auto !important;
+	
+}
+ #left {
+	width: 375px;
+	float: left;
+	min-height:200px;
+	height:auto;
+	margin-left:8px;
+
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #333;
+	line-height: 20px;
+	margin: 12px 8px;
+}
+
+
+
+/* root element for tabs  */
+ul.tabs { 
+	list-style:none; 
+	margin:0 !important; 
+	padding:0;	
+	border-bottom:1px solid #666;	
+	height:30px;
+}
+
+/* single tab */
+ul.tabs li { 
+	float:left;	 
+	text-indent:0;
+	padding:0;
+	margin:0 !important;
+	list-style-image:none !important; 
+}
+
+/* link inside the tab. uses a background image */
+ul.tabs a {
+	background: url(../images/red.png) no-repeat -420px 0;
+	font-size:14px;
+	display:block;
+	height: 30px;
+	line-height:30px;
+	width: 134px;
+	text-align:center;
+	text-decoration:none;
+	color:#333;
+	padding:0px;
+	margin:0px;
+	position:relative;
+	top:1px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+ul.tabs a:active {
+	outline:none;		
+}
+
+/* when mouse enters the tab move the background image */
+ul.tabs a:hover {
+	background-position: -420px -31px;	
+	color:#fff;	
+}
+
+/* active tab uses a class name "current". its highlight is also done by moving the background image. */
+ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a {
+	background-position: -420px -62px;		
+	cursor:default !important; 
+	color:#000 !important;
+}
+
+/* Different widths for tabs: use a class name: w1, w2, w3 or w2 */
+
+
+/* width 1 */
+ul.tabs a.s 			{ background-position: -553px 0; width:81px; }
+ul.tabs a.s:hover 	{ background-position: -553px -31px; }
+ul.tabs a.s.current  { background-position: -553px -62px; }
+
+/* width 2 */
+ul.tabs a.l 			{ background-position: -248px -0px; width:174px; }
+ul.tabs a.l:hover 	{ background-position: -248px -31px; }
+ul.tabs a.l.current  { background-position: -248px -62px; }
+
+
+/* width 3 */
+ul.tabs a.xl 			{ background-position: 0 -0px; width:248px; }
+ul.tabs a.xl:hover 	{ background-position: 0 -31px; }
+ul.tabs a.xl.current { background-position: 0 -62px; }
+
+
+/* initially all panes are hidden */ 
+.panes .pane {
+	display:none;		
+}
+
+/* NAV MENU */
+
+
+ul.dropdown 						{  position: relative;z-index: 1;}
+ul.dropdown li 						{ font-weight: bold;  float: left;  zoom: 1;  }
+ul.dropdown a:hover		         	{ color: #333; }
+ul.dropdown a:active                { color: #ffa500; }
+ul.dropdown li a                    { display:block;  padding-left:8px;/* padding: 0 4px; */ border-right: 1px solid #999;
+	 								  color: #9d292;  /* display: block; padding: 4px 8px; border-right: 1px solid #999;
+	 								  color: #9d292; */}
+ul.dropdown li:last-child a         { border-right: none; } /* Doesn't work in IE */
+ul.dropdown li.hover,
+ul.dropdown li:hover                { color: black; position: relative; }
+ul.dropdown li.hover a              { color: #9d2929; }
+
+/* 
+	LEVEL TWO
+*/
+
+ul.dropdown ul 		{ width: 220px; visibility: hidden; position: absolute; top: 100%; left: 0; }
+ul.dropdown ul li 					{ font-weight: normal; background: #f6f6f6; color: #f00; 
+									  border-bottom: 1px solid #ccc; float: none;}
+
+									  
+                                    /* IE 6 & 7 Needs Inline Block */
+
+ul.dropdown ul li a					{ border-right: none; width: 100%; display: inline-block; } 
+#container #header ul#nav  li ul li a	{
+	border-right: none;
+	width: 100%;
+	display: inline-block;
+	background-color: #c1c1c1;
+	color: #000;
+	border-bottom: 1px solid #d1d1d1;
+	line-height:20px;
+
+} 
+
+#container #header ul#nav  li ul li a:hover	{
+	border-right: none;
+	width: 100%;
+	display: inline-block;
+	background-color: #efefef;
+	color: #333;
+	border-bottom: 1px solid #ccc;
+} 
+
+/* 
+	LEVEL THREE
+*/
+ul.dropdown ul ul 	{ left:100%;top:0;}
+
+ul.dropdown li:hover > ul {visibility:visible;}
+ul.dropdown li ul li a:hover{
+	background-color:#fff;
+	color:#f00;
+}
+
+
+/* NAV STYLES */
+
+
+
+#container #footer #footer-wrapper ul li {
+	display: inline;
+	
+}
+#footer #footer-wrapper ul li a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.125em;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+	width: 120px;
+	float: left;
+	margin-top:20px;
+}
+
+#footer-wrapper ul li.home a{width:90px !important;}
+.fr #footer-wrapper ul li.about a {width:200px !important;text-align:center;}
+#footer-wrapper ul li.contact a { width:170px;}
+.fr  #footer-wrapper ul li.contact a { width:200px !important;}
+#footer-wrapper ul li.sitemap a {}
+
+#footer {
+	padding-top: 15px;
+	padding-left: 30px;
+}
+
+
+.mapcontainer {
+	width:600px;
+	padding: 3px;
+	border: 1px solid #EBEBEB;
+	background: #FFF;
+	margin-bottom:24px;
+}
+
+.contactWrap { font-size:12px; width:606px;}
+.contactWrap h2 {
+	font-weight:bold;
+	font-size:18px;
+	color: #333;
+}
+.contactWrap p { margin-left:0;}
+.contactWrap td {
+	padding:5px 0;
+	border:none;
+	font-size:14px;
+}
+.faemaAddress {
+	width: 250px;
+	padding-top: 16px;
+	float:left
+}
+.tempAddress {
+	width: 600px;
+	height: 100px
+}
+
+.tempAddress p{
+	color: #FF0000 !important
+}
+.faemaHours { float: right; background:#FFFAEA; border: 1px solid #E9DEC0; padding: 15px; width:323px;}
+
+.contentpage #left { width:100px;}
+.contentpage p {
+	margin-left:0;
+	font-size: 14px;
+	color: #666666;
+}
+.contentpage h1 { color: #A5362F; font-size:1.25em; font-family:Verdana, Arial, Helvetica, sans-serif;}
+.contentpage h2 { color: #006699; font-size:1.25em; font-family: Verdana, Arial, Helvetica;
+margin:6px 0 12px 0;}
+.contentpage #right { width:850px;}
+.contentpage #content { min-height:450px;}
+
+#left table, #left td {border:none;}
+#left table { margin:0 auto; }
+#left p {
+	font-size: 14px;
+	color: #333;
+}
+
+form {width:606px;margin-top:30px;}
+
+form.cmxform fieldset {
+	margin-bottom: 8px;
+	margin-top: 8px;
+	border: 1px solid #369;
+	padding: 12px;
+}
+form.cmxform legend {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #444;
+	font-weight: bold;
+	padding-top: 0;
+	padding-right: 0.5em;
+	padding-bottom: 0;
+	padding-left: 0.5em;
+}
+form.cmxform label {
+	display: inline-block;
+	line-height: 1.8;
+	vertical-align: top;
+	color: #666666;
+}
+form.cmxform fieldset ol {
+  margin: 0;
+  padding: 0;
+}
+form.cmxform fieldset li {
+	list-style: none;
+	padding: 5px;
+	margin: 0;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #CCCCCC;
+}
+form.cmxform fieldset fieldset {
+  border: none;
+  margin: 3px 0 0;
+}
+form.cmxform fieldset fieldset legend {
+  padding: 0 0 5px;
+  font-weight: normal;
+}
+form.cmxform fieldset fieldset label {
+  display: block;
+  width: auto;
+
+}
+form.cmxform em {
+  font-weight: bold;
+  font-style: normal;
+  color: #f00;
+}
+form.cmxform label {
+	width: 120px; /* Width of labels */
+	font-size:16px;
+}
+form.cmxform fieldset fieldset label {
+  margin-left: 123px; /* Width plus 3 (html space) */
+}
+
+#footer-wrapper ul {width:500px;height:63px;float:left;}
+
+.logo {width:425px; float:right;margin-right:120px;margin-bottom:20px;}
+p.address {color:#FFF;font-size:87.5%;margin:0 0 0 18px;}
